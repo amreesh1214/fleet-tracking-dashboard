@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+/* src/App.css - COMPLETE UPDATED VERSION */
+
+/* Root Variables */
+:root {
+  --tooltip-bg: #2e2e2e;
+  --tooltip-border: #444;
+  --text-primary: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+[data-theme='light'] {
+  --tooltip-bg: #ffffff;
+  --tooltip-border: #ddd;
+  --text-primary: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+/* App Container */
+.app-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+/* App Bar */
+.app-bar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1100;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+/* Loading & Error States */
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Map View Container */
+.map-view-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section {
+  background: transparent;
+}
+
+.controls-section,
+.map-section,
+.trips-section {
+  width: 100%;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.trip-card-wrapper {
+  height: 100%;
+}
+
+/* Analytics View Container - FIXED */
+.analytics-view-container {
+  width: 100%;
+  height: calc(100vh - 280px);
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Analytics Charts Container - NEW */
+.analytics-charts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.analytics-chart-item {
+  height: 100%;
+  min-height: 0;
+}
+
+/* Chart Hover Effects */
+.MuiPaper-root {
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.MuiPaper-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar Styling */
+.analytics-view-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.analytics-view-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.analytics-view-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.analytics-view-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .analytics-charts-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .trips-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
+}
+
+@media (max-width: 1200px) {
+  .analytics-view-container {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .analytics-charts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .trips-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .analytics-charts-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .analytics-chart-item {
+    height: 400px;
+  }
+  
+  .trips-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .analytics-view-container {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.5rem;
+  }
+  
+  .map-view-container {
+    gap: 1rem;
+  }
+  
+  .analytics-chart-item {
+    height: 350px;
+  }
+  
 }
