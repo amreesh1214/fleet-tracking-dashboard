@@ -2,7 +2,6 @@
 
 A real-time fleet tracking and analytics dashboard built with React, featuring live vehicle monitoring, AI-powered insights, and comprehensive trip analytics.
 
-![Dashboard Preview](https://via.placeholder.com/800x400.png?text=Add+Your+Screenshot+Here)
 
 ## 🌟 Features
 
@@ -35,7 +34,7 @@ A real-time fleet tracking and analytics dashboard built with React, featuring l
 
 ## 🚀 Live Demo
 
-**Live URL**: [Your Deployed URL Here]
+**Live URL**: https://frolicking-dusk-57a764.netlify.app/
 
 > Replace with your actual deployment URL (Vercel, Netlify, etc.)
 
