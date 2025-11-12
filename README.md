@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 🚗 Fleet Tracking Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time fleet tracking and analytics dashboard built with React, featuring live vehicle monitoring, AI-powered insights, and comprehensive trip analytics.
 
-## Available Scripts
+![Dashboard Preview](https://via.placeholder.com/800x400.png?text=Add+Your+Screenshot+Here)
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+### 🗺️ Real-Time Tracking
+- Live vehicle location tracking on interactive map
+- Real-time speed and battery monitoring
+- Historical trip replay with playback controls
+- Multiple vehicle tracking simultaneously
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📊 Advanced Analytics
+- **Speed Analytics**: Real-time speed monitoring and historical trends
+- **Battery Health**: Track battery levels and predict time-to-empty
+- **Signal Quality**: Network connectivity analysis with traffic-light indicators
+- **Distance Metrics**: Trip-wise distance breakdown and fleet totals
+- **Trip Duration**: Analyze trip patterns and durations
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🤖 AI-Powered Insights
+- Fleet efficiency scoring (0-100)
+- Predictive maintenance alerts
+- Low battery warnings
+- Critical range notifications
+- Natural language chatbot for fleet queries
 
-### `npm test`
+### 🎨 Modern UI/UX
+- Dark/Light theme toggle
+- Responsive design (mobile, tablet, desktop)
+- Interactive charts using Recharts
+- Material-UI components
+- Smooth animations and transitions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Live Demo
 
-### `npm run build`
+**Live URL**: [Your Deployed URL Here]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Replace with your actual deployment URL (Vercel, Netlify, etc.)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**: React 18
+- **UI Library**: Material-UI (MUI)
+- **Charts**: Recharts
+- **Maps**: React Leaflet
+- **State Management**: React Hooks
+- **Styling**: CSS3, Material-UI
 
-### `npm run eject`
+## 📦 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**
